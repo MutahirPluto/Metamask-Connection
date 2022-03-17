@@ -64,7 +64,7 @@ function Connect({ setUserAddress }) {
     const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl;
     return (
       <a href={metamaskAppDeepLink}>
-         <button className={styles.button}>
+         <button className={styles.button} onClick={() => connect(setUserAddress)}>
            Connect to MetaMask
          </button>
       </a>
