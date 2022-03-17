@@ -60,7 +60,7 @@ export default function MetaMaskAuth({ onAddressChanged }) {
 
 function Connect({ setUserAddress }) {
   if (isMobileDevice()) {
-    const dappUrl = "metamask-auth.ilamanov.repl.co"; // TODO enter your dapp URL. For example: https://uniswap.exchange. (don't enter the "https://")
+    const dappUrl = "metamask_connectivity.surge.sh"; // TODO enter your dapp URL. For example: https://uniswap.exchange. (don't enter the "https://")
     const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl;
     return (
       <a href={metamaskAppDeepLink}>
