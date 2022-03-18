@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import MetaMaskAuth from "./metamask-auth"
+import Hello  from "./hello";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <MetaMaskAuth onAddressChanged={address => {}}/>
+      <Hello />
+      {/* <MetaMaskAuth /> */}
     </div>
   );
 }
