@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "@uauth/bnc-onboard": "^1.0.0",
+    "@uauth/js": "^1.0.0",
     "@web3-onboard/core": "^2.0.11",
     "@web3-onboard/fortmatic": "^2.0.2",
     "@web3-onboard/injected-wallets": "^2.0.2",
@@ -19,6 +21,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "stream-browserify": "^3.0.0",
+    "use-onboard": "^0.2.8",
     "web-vitals": "^2.1.4",
     "webpack": "^5.70.0"
   },

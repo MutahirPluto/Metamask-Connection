@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Onboard from '@web3-onboard/core'
 import injectedModule, { ProviderLabel } from '@web3-onboard/injected-wallets'
+// import { useOnboard } from "use-onboard";
 import { async } from "q";
 
 
 function isMobileDevice() {
-
+   
     const u = async () => {
 
         const MAINNET_RPC_URL = 'https://mainnet.infura.io/v3/76b2b48a68cb43df9b0654fcd9c30ce7'
@@ -46,15 +47,15 @@ function isMobileDevice() {
     }
   ],
   appMetadata: {
-    name: 'My App',
-    icon: '<SVG_ICON_STRING>',
-    description: 'My app using Onboard'
+    name: 'dohdkljkldfhklj',
+    icon: 'https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci83YmEzMTE4ODAxNmQ1OTY1NzZkNGY5YWZmMDg4MjFlNT9zaXplPTEwMCZkZWZhdWx0PXJldHJvIn0.jQsUMF09WqBdFBDxhexPJGNliSyHvnTRKCKEq1hDOgQ',
+    description: 'fkfk'
   }
 })
 
 const wallets = await onboard.connectWallet()
 
-console.log("ll",wallets)
+console.log("ll",onboard)
     }
     
 
