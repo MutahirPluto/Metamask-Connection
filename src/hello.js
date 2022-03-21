@@ -41,7 +41,7 @@ const web3Onboard = init({
   ],
   chains: [
     {
-      id: '0x3',
+      id: '0x1',
       token: 'ETH',
       label: 'Ethereum Mainnet',
       rpcUrl: 'https://mainnet.infura.io/v3/ababf9851fd845d0a167825f97eeb12b'
@@ -72,12 +72,17 @@ const web3Onboard = init({
     recommendedInjectedWallets: [
       { name: 'MetaMask', url: 'https://metamask.io' },
       { name: 'Coinbase', url: 'https://wallet.coinbase.com/' }
-    ]
+    ],
+    agreement: {
+      version: '1.0.0',
+      // termsUrl: 
+    }
   }
 })
 
 const hh =  async () => {
-    const wallets = await web3Onboard.connectWallet()
+    const wallets = await web3Onboard.state.select('wallets').pipe()
+    web3Onboard.connectWallet({chainId : '0x1', wallet: 'MetaMask'})
     // console.log("wallets", await wallets)
 } 
 hh()
