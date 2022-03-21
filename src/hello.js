@@ -28,7 +28,8 @@ const walletConnect = walletConnectModule()
 const injectedd = injectedModule({
     filter: {
       // allow only on non android mobile
-      [ProviderLabel.Detected]: false ['Android','Chrome','Android Browser', 'Firefox', 'Windows Phone']
+      [ProviderLabel.MetaMask]: false ['Android','Chrome','Android Browser', 'Firefox', 'Windows Phone']
+
     }
   })
 
